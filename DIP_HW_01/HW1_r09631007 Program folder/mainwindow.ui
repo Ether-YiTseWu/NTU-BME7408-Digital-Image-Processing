@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1449</width>
+    <height>787</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLabel" name="showImg01">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>50</y>
+      <width>320</width>
+      <height>320</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="showImg02">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>50</y>
+      <width>320</width>
+      <height>320</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QChartView" name="showHis01">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>380</y>
+      <width>340</width>
+      <height>340</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QChartView" name="showHis02">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>380</y>
+      <width>340</width>
+      <height>340</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="addPixel">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>10</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Add</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="openImg01">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Open Image One</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="substractPixel">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>10</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Substract</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="multiplyPixel">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>10</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Multiply</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="openImg02">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>10</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Open Image Two</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="showImgAfter">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>50</y>
+      <width>320</width>
+      <height>320</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QChartView" name="showHisAfter">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>380</y>
+      <width>340</width>
+      <height>340</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_1">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>720</y>
+      <width>141</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Image 1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>720</y>
+      <width>141</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Image 2</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>720</y>
+      <width>341</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Image 3 (Arithmetic Operations of Img2)</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="dividePixel">
+    <property name="geometry">
+     <rect>
+      <x>960</x>
+      <y>10</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Divide</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="showImgNew">
+    <property name="geometry">
+     <rect>
+      <x>1070</x>
+      <y>50</y>
+      <width>320</width>
+      <height>320</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QChartView" name="showHisNew">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>380</y>
+      <width>340</width>
+      <height>340</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>1070</x>
+      <y>720</y>
+      <width>341</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Image 4 (Avg of Img1, 3、 Edge of Img3)</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="averageImg">
+    <property name="geometry">
+     <rect>
+      <x>1070</x>
+      <y>10</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Average</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="specialImg">
+    <property name="geometry">
+     <rect>
+      <x>1160</x>
+      <y>10</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Horizontal Edge</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1449</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QChartView</class>
+   <extends>QGraphicsView</extends>
+   <header>QtCharts</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>openImg01</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>openImg01()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>66</x>
+     <y>64</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>64</x>
+     <y>88</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>addPixel</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>addPixel()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>720</x>
+     <y>73</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>161</x>
+     <y>90</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>substractPixel</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>substractPixel()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>780</x>
+     <y>73</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>267</x>
+     <y>87</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>multiplyPixel</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>multiplyPixel()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>870</x>
+     <y>73</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>343</x>
+     <y>82</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>openImg02</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>openImg02()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>441</x>
+     <y>73</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>176</x>
+     <y>80</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>dividePixel</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>dividePixel()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>999</x>
+     <y>58</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1011</x>
+     <y>79</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>averageImg</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>averageImg()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1123</x>
+     <y>54</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1148</x>
+     <y>81</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>specialImg</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>specialImg()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1227</x>
+     <y>54</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1260</x>
+     <y>82</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>openImg01()</slot>
+  <slot>addPixel()</slot>
+  <slot>multiplyPixel()</slot>
+  <slot>substractPixel()</slot>
+  <slot>openImg02()</slot>
+  <slot>dividePixel()</slot>
+  <slot>averageImg()</slot>
+  <slot>specialImg()</slot>
+ </slots>
+</ui>

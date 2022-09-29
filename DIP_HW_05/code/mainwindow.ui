@@ -1,0 +1,692 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>884</width>
+    <height>731</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QPushButton" name="openImg">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>20</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Open Image</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="showImgIn">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>70</y>
+      <width>400</width>
+      <height>300</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="showImgOut">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>70</y>
+      <width>400</width>
+      <height>300</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="inputImg">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>380</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Input Image</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="CMY">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>440</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>CMY</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="HSI">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>440</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>HSI</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="XYZ">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>480</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>XYZ</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="YUV">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>480</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>YUV</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="LAB">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>480</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>L*A*B*</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="outputImg">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>380</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Output Image</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="CMY_2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>440</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>RGB</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pseudoColor">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>540</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Pseudo Color</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="showData">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>440</y>
+      <width>561</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'PMingLiU'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="barGray">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>580</y>
+      <width>390</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>                       Gray Color Bar</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="barRGB">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>580</y>
+      <width>390</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>                     Pseudo Color Bar</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="To">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>580</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>   To</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pseudoColor_3">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>540</y>
+      <width>221</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Change Pseudo Color Bar</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Table_Index">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>540</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Table Index : </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="REDLable">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>540</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>R :</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="red">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>539</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Green_Lab">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>540</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>G :</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="green">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>540</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Blue_Label">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>540</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>B :</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="blue">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>540</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="tableIndex">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>540</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pseudoColor_2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>630</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>K-Means</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="kValue_Label">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>630</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>K Value : </string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="kMeans_k">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>630</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>884</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>openImg</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>openImg()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>107</x>
+     <y>68</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>147</x>
+     <y>70</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>CMY_2</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>RGB()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>100</x>
+     <y>473</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>225</x>
+     <y>94</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>CMY</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>CMY()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>190</x>
+     <y>473</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>307</x>
+     <y>93</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>HSI</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>HSI()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>280</x>
+     <y>473</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>389</x>
+     <y>91</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>XYZ</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>XYZ()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>100</x>
+     <y>513</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>476</x>
+     <y>92</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>LAB</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>LAB()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>190</x>
+     <y>513</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>559</x>
+     <y>94</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>YUV</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>YUV()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>280</x>
+     <y>513</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>649</x>
+     <y>95</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pseudoColor</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>pseudoColor()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>128</x>
+     <y>573</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>154</x>
+     <y>488</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pseudoColor_3</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>changeColor()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>323</x>
+     <y>590</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>379</x>
+     <y>560</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pseudoColor_2</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>kMeans()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>100</x>
+     <y>676</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>147</x>
+     <y>699</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>openImg()</slot>
+  <slot>RGB()</slot>
+  <slot>CMY()</slot>
+  <slot>HSI()</slot>
+  <slot>XYZ()</slot>
+  <slot>LAB()</slot>
+  <slot>YUV()</slot>
+  <slot>pseudoColor()</slot>
+  <slot>changeColor()</slot>
+  <slot>kMeans()</slot>
+ </slots>
+</ui>
